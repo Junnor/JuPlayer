@@ -96,6 +96,17 @@ class ViewController: UIViewController {
             allVideo.append(video)
         }
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let playervc = segue.destination as! PlayerViewController
+        let indexPath = sender as! IndexPath
+        let video = allVideo[indexPath.row]
+        let urlString = video.playInfo.first!.url
+        playervc.videoURL = URL(string: urlString)
+        playervc.videoTitle = video.title
+    }
 
 }
 
@@ -149,31 +160,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-        let playerVC = PlayerViewController()
-        weak var weakPlayerVC = playerVC
-        playerVC.playAction = {
-            let video = self.allVideo[indexPath.row]
-            var dic = [String: String]()
-            for resolution in video.playInfo {
-                dic[resolution.name] = resolution.url
-            }
-            
-            let playerUrl = URL(string: video.playInfo.first!.url)!
-            
-            let playerModel = ZFPlayerModel()
-            playerModel.title = video.title
-            playerModel.videoURL = playerUrl
-            playerModel.placeholderImageURLString = video.coverForFeed
-            playerModel.indexPath = indexPath
-            playerModel.resolutionDic = dic
-            
-            weakPlayerVC?.playerView.playerControlView(weakPlayerVC!.controlView, playerModel: playerModel)
-            
-            weakPlayerVC?.playerView.hasDownload = true
-            weakPlayerVC?.playerView.autoPlayTheVideo()
-        }
-        self.navigationController?.pushViewController(playerVC, animated: true)
+        performSegue(withIdentifier: "play video", sender: indexPath)
     }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {

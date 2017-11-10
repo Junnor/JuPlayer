@@ -86,27 +86,34 @@
             </objects>
             <point key="canvasLocation" x="476" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="DZz-uj-0ER">
             <objects>
-                <viewController id="DCb-zo-9QK" sceneMemberID="viewController">
+                <viewController id="DCb-zo-9QK" customClass="PlayerViewController" customModule="JuPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zs2-Oy-CU1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KUo-9g-1ml">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Red-EC-SxS">
+                                <rect key="frame" x="0.0" y="260" width="375" height="211"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Red-EC-SxS" secondAttribute="height" multiplier="16:9" id="OV8-T1-bwv"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KUo-9g-1ml" firstAttribute="bottom" secondItem="nV0-3q-FFI" secondAttribute="bottom" id="8nL-jU-9cp"/>
-                            <constraint firstItem="KUo-9g-1ml" firstAttribute="trailing" secondItem="nV0-3q-FFI" secondAttribute="trailing" id="9Xq-oN-90Q"/>
-                            <constraint firstItem="KUo-9g-1ml" firstAttribute="top" secondItem="nV0-3q-FFI" secondAttribute="top" id="iEg-PX-q24"/>
-                            <constraint firstItem="KUo-9g-1ml" firstAttribute="leading" secondItem="nV0-3q-FFI" secondAttribute="leading" id="uVp-bj-mG0"/>
+                            <constraint firstItem="Red-EC-SxS" firstAttribute="trailing" secondItem="nV0-3q-FFI" secondAttribute="trailing" id="2co-3r-k6g"/>
+                            <constraint firstItem="Red-EC-SxS" firstAttribute="centerX" secondItem="nV0-3q-FFI" secondAttribute="centerX" id="3ID-q0-yVv"/>
+                            <constraint firstItem="Red-EC-SxS" firstAttribute="centerY" secondItem="nV0-3q-FFI" secondAttribute="centerY" id="3bQ-Xy-cCg"/>
+                            <constraint firstItem="Red-EC-SxS" firstAttribute="leading" secondItem="nV0-3q-FFI" secondAttribute="leading" id="Gse-ps-NlG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nV0-3q-FFI"/>
                     </view>
+                    <connections>
+                        <outlet property="playerFatherView" destination="Red-EC-SxS" id="rTl-a7-EJu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUk-qW-0il" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

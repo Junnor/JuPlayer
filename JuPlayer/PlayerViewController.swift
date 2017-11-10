@@ -10,45 +10,40 @@ import UIKit
 import ZFPlayer
 
 class PlayerViewController: UIViewController {
-
-    lazy var playerView: ZFPlayerView! = {
-        let player = ZFPlayerView.shared()
-        player?.delegate = self
-        player?.cellPlayerOnCenter = false
-        player?.stopPlayWhileCellNotVisable =  true
+    
+    var videoURL: URL!
+    var videoTitle: String!
+    
+    @IBOutlet weak var playerFatherView: UIView!
+    
+    
+    lazy private var playerModel: ZFPlayerModel! = {
+        let model = ZFPlayerModel()
+        model.title = "看鬼啊"
+        model.videoURL = videoURL
+        model.placeholderImage = #imageLiteral(resourceName: "loading_bgView1")
+        model.fatherView = playerFatherView
+        return model
+    }()
+    
+    lazy private var playerView: ZFPlayerView! = {
+        let player = ZFPlayerView()
+        player.playerControlView(nil, playerModel: playerModel)
+        player.delegate = self
+        player.hasDownload = true
+        player.autoPlayTheVideo()
         return player
     }()
-    
-    lazy var controlView: ZFPlayerControlView! = {
-        return ZFPlayerControlView()
-    }()
-
-    var playAction: (() -> Void)?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.addSubview(playerView)
+        playerModel.videoURL = videoURL
+        playerModel.title = videoTitle
+        
+        playerView.autoPlayTheVideo()
     }
     
-    // play
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-        configurePlay()
-    }
-    
-    
-    private func configurePlay() {
-        
-        if playAction != nil {
-            playAction!()
-        }
-    }
-
-
 }
 
 extension PlayerViewController: ZFPlayerDelegate {
