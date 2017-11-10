@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6789298A1FB5AB3C0021850B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678929891FB5AB3C0021850B /* PlayerViewController.swift */; };
+		67CF6CD41FB57CE500D5BCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF6CD31FB57CE500D5BCC3 /* AppDelegate.swift */; };
+		67CF6CD61FB57CE500D5BCC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF6CD51FB57CE500D5BCC3 /* ViewController.swift */; };
+		67CF6CD91FB57CE500D5BCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CF6CD71FB57CE500D5BCC3 /* Main.storyboard */; };
+		67CF6CDB1FB57CE500D5BCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CF6CDA1FB57CE500D5BCC3 /* Assets.xcassets */; };
+		67CF6CDE1FB57CE500D5BCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CF6CDC1FB57CE500D5BCC3 /* LaunchScreen.storyboard */; };
+		67CF6CE61FB57ECC00D5BCC3 /* videoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 67CF6CE51FB57ECB00D5BCC3 /* videoData.json */; };
+		67CF6CE81FB57EF000D5BCC3 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF6CE71FB57EF000D5BCC3 /* VideoModel.swift */; };
+		67CF6CEA1FB5834400D5BCC3 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CF6CE91FB5834400D5BCC3 /* PlayerCell.swift */; };
+		D12C84C141A2D5A75B838215 /* Pods_JuPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9F17B8E7E2A98CFFB7533B /* Pods_JuPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61067203369979DA1F1F9B9C /* Pods-JuPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuPlayer/Pods-JuPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		678929891FB5AB3C0021850B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		67CF6CD01FB57CE500D5BCC3 /* JuPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67CF6CD31FB57CE500D5BCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67CF6CD51FB57CE500D5BCC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67CF6CD81FB57CE500D5BCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67CF6CDA1FB57CE500D5BCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67CF6CDD1FB57CE500D5BCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67CF6CDF1FB57CE500D5BCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67CF6CE51FB57ECB00D5BCC3 /* videoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoData.json; sourceTree = "<group>"; };
+		67CF6CE71FB57EF000D5BCC3 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		67CF6CE91FB5834400D5BCC3 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		9021570645EA2EEB510DE191 /* Pods-JuPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuPlayer/Pods-JuPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		9E9F17B8E7E2A98CFFB7533B /* Pods_JuPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JuPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67CF6CCD1FB57CE500D5BCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12C84C141A2D5A75B838215 /* Pods_JuPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1356DEC12BCBFB50A75FE050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9021570645EA2EEB510DE191 /* Pods-JuPlayer.debug.xcconfig */,
+				61067203369979DA1F1F9B9C /* Pods-JuPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67CF6CC71FB57CE500D5BCC3 = {
+			isa = PBXGroup;
+			children = (
+				67CF6CD21FB57CE500D5BCC3 /* JuPlayer */,
+				67CF6CD11FB57CE500D5BCC3 /* Products */,
+				1356DEC12BCBFB50A75FE050 /* Pods */,
+				9C7C71C44F5A1EF0747FF8C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67CF6CD11FB57CE500D5BCC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67CF6CD01FB57CE500D5BCC3 /* JuPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67CF6CD21FB57CE500D5BCC3 /* JuPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				67CF6CD31FB57CE500D5BCC3 /* AppDelegate.swift */,
+				67CF6CD51FB57CE500D5BCC3 /* ViewController.swift */,
+				67CF6CE71FB57EF000D5BCC3 /* VideoModel.swift */,
+				67CF6CE91FB5834400D5BCC3 /* PlayerCell.swift */,
+				678929891FB5AB3C0021850B /* PlayerViewController.swift */,
+				67CF6CD71FB57CE500D5BCC3 /* Main.storyboard */,
+				67CF6CDA1FB57CE500D5BCC3 /* Assets.xcassets */,
+				67CF6CDC1FB57CE500D5BCC3 /* LaunchScreen.storyboard */,
+				67CF6CDF1FB57CE500D5BCC3 /* Info.plist */,
+				67CF6CE51FB57ECB00D5BCC3 /* videoData.json */,
+			);
+			path = JuPlayer;
+			sourceTree = "<group>";
+		};
+		9C7C71C44F5A1EF0747FF8C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E9F17B8E7E2A98CFFB7533B /* Pods_JuPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67CF6CCF1FB57CE500D5BCC3 /* JuPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67CF6CE21FB57CE500D5BCC3 /* Build configuration list for PBXNativeTarget "JuPlayer" */;
+			buildPhases = (
+				D15F47F684F1B0E0CD6ECC66 /* [CP] Check Pods Manifest.lock */,
+				67CF6CCC1FB57CE500D5BCC3 /* Sources */,
+				67CF6CCD1FB57CE500D5BCC3 /* Frameworks */,
+				67CF6CCE1FB57CE500D5BCC3 /* Resources */,
+				B810E99B5060813E526D3C57 /* [CP] Embed Pods Frameworks */,
+				3D5FBA971673A0BAC4B88CBD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuPlayer;
+			productName = JuPlayer;
+			productReference = 67CF6CD01FB57CE500D5BCC3 /* JuPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67CF6CC81FB57CE500D5BCC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = moelove;
+				TargetAttributes = {
+					67CF6CCF1FB57CE500D5BCC3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 67CF6CCB1FB57CE500D5BCC3 /* Build configuration list for PBXProject "JuPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67CF6CC71FB57CE500D5BCC3;
+			productRefGroup = 67CF6CD11FB57CE500D5BCC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67CF6CCF1FB57CE500D5BCC3 /* JuPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67CF6CCE1FB57CE500D5BCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CF6CDE1FB57CE500D5BCC3 /* LaunchScreen.storyboard in Resources */,
+				67CF6CDB1FB57CE500D5BCC3 /* Assets.xcassets in Resources */,
+				67CF6CD91FB57CE500D5BCC3 /* Main.storyboard in Resources */,
+				67CF6CE61FB57ECC00D5BCC3 /* videoData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D5FBA971673A0BAC4B88CBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuPlayer/Pods-JuPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B810E99B5060813E526D3C57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuPlayer/Pods-JuPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15F47F684F1B0E0CD6ECC66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67CF6CCC1FB57CE500D5BCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CF6CEA1FB5834400D5BCC3 /* PlayerCell.swift in Sources */,
+				67CF6CD61FB57CE500D5BCC3 /* ViewController.swift in Sources */,
+				67CF6CE81FB57EF000D5BCC3 /* VideoModel.swift in Sources */,
+				67CF6CD41FB57CE500D5BCC3 /* AppDelegate.swift in Sources */,
+				6789298A1FB5AB3C0021850B /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		67CF6CD71FB57CE500D5BCC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67CF6CD81FB57CE500D5BCC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67CF6CDC1FB57CE500D5BCC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67CF6CDD1FB57CE500D5BCC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67CF6CE01FB57CE500D5BCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67CF6CE11FB57CE500D5BCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67CF6CE31FB57CE500D5BCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9021570645EA2EEB510DE191 /* Pods-JuPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5NZ3R8346;
+				INFOPLIST_FILE = JuPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moelove.JuPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67CF6CE41FB57CE500D5BCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61067203369979DA1F1F9B9C /* Pods-JuPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V5NZ3R8346;
+				INFOPLIST_FILE = JuPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.moelove.JuPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67CF6CCB1FB57CE500D5BCC3 /* Build configuration list for PBXProject "JuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CF6CE01FB57CE500D5BCC3 /* Debug */,
+				67CF6CE11FB57CE500D5BCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67CF6CE21FB57CE500D5BCC3 /* Build configuration list for PBXNativeTarget "JuPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67CF6CE31FB57CE500D5BCC3 /* Debug */,
+				67CF6CE41FB57CE500D5BCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67CF6CC81FB57CE500D5BCC3 /* Project object */;
+}

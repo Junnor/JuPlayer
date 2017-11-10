@@ -1,0 +1,18 @@
+PODS:
+  - Kingfisher (4.2.0)
+  - Masonry (1.1.0)
+  - ZFPlayer (2.1.5):
+    - Masonry
+
+DEPENDENCIES:
+  - Kingfisher
+  - ZFPlayer
+
+SPEC CHECKSUMS:
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZFPlayer: 8a80bf8eb4638b97fbceaefcd3ca9978e9f17c9d
+
+PODFILE CHECKSUM: 8a21fe4ce5a2a1b20a6d6bd667b53ea6f3600882
+
+COCOAPODS: 1.2.1
